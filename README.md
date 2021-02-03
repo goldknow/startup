@@ -1,5 +1,5 @@
 # 스타트업 프로젝트 (Typescript)
-타입스크립트 환경의 Nuxtjs 스타트업 프로젝트.
+타입스크립트 환경의 Nuxtjs 스타트업 프로젝트. R
 
 
 ## Install Nodejs
