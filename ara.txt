@@ -1,0 +1,75 @@
+/pages/
+웹 주소의 시작점. (라우팅)
+레이아웃 사이 컨텐츠
+
+-----
+
+/contents/
+데이터 정의 용
+
+-----
+
+/layouts/
+레이아웃 컴포넌트 틀
+
+/component/
+body 안에 들어갈 코드
+
+-----
+
+/assets/
+기본적으로 동적으로 생성되고 숨겨진다.
+~/assets/  
+	물결을 사용한다...!
+	@가 여전히 지원되지만 css의 배경 이미지와 같은 모든 경우에 작동하지 않는다.
+
+
+/statics/
+
+
+////////////////////////////////
+
+ex)
+
+/pages/
+		 component/
+		 				section1/
+						 			index.vue
+									card-list.vue
+									card.vue
+
+
+/layouts/
+			header.vue
+			footer.vue
+
+////////////////////////////////
+
+<template>
+  <div>
+	  Project
+    <img src="~/assets/imgs/test1.jpg" alt="">
+    <div style='font-size: 20px'>dd</div>
+    루트엘리먼트~!
+  </div>
+</template>
+
+=> template 안에 div 하나만 있고 그 div 안에서 움직여야함.
+
+
+////////////////////////////////
+
+<style>
+	background:url(~assets/img.png);
+</style>
+
+인라인 스타일은 쓰지 말자!
+
+<style scope>에는 import가 안된다.
+
+글로벌 파일은 nuxt.config.js에 넣어서 사용하자.
+(font, reset, common)
+
+////////////////////////////////
+
+pages에서 컴포넌트를 가져가려면 

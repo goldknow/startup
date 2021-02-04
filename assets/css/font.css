@@ -1,0 +1,84 @@
+/* imports the font */
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+/* 
+   ko - Spoqa Han Sans 
+   font-family: 'Spoqa Han Sans'
+   font-weight: 700(bold), 400(regular), 300(light), 100(thin);
+*/
+@font-face {
+   font-family: 'Spoqa Han Sans';
+   font-weight: 700;
+   src: local('Spoqa Han Sans Bold'),
+      url('~assets/fonts/SpoqaHanSansBold.woff2') format('woff2'),
+      url('~assets/fonts/SpoqaHanSansBold.woff') format('woff'),
+      url('~assets/fonts/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Spoqa Han Sans';
+   font-weight: 400;
+   src: local('Spoqa Han Sans Regular'),
+      url('~assets/fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+      url('~assets/fonts/SpoqaHanSansRegular.woff') format('woff'),
+      url('~assets/fonts/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Spoqa Han Sans';
+   font-weight: 300;
+   src: local('Spoqa Han Sans Light'),
+      url('~assets/fonts/SpoqaHanSansLight.woff2') format('woff2'),
+      url('~assets/fonts/SpoqaHanSansLight.woff') format('woff'),
+      url('~assets/fonts/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Spoqa Han Sans';
+   font-weight: 100;
+   src: local('Spoqa Han Sans Thin'),
+      url('~assets/fonts/SpoqaHanSansThin.woff2') format('woff2'),
+      url('~assets/fonts/SpoqaHanSansThin.woff') format('woff'),
+      url('~assets/fonts/SpoqaHanSansThin.ttf') format('truetype');
+}
+
+
+/* 
+   en, num - Montserrat 
+   font-family: 'Montserrat'  
+*/
+@font-face {
+   font-family: 'MontserratB';
+   font-weight: 700;
+   src: local('Montserrat-Bold'),
+      url('~assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('~assets/fonts/Montserrat-Bold.woff') format('woff'),
+      url('~assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'MontserratR';
+   font-weight: 400;
+   src: local('Montserrat-Regular'),
+      url('~assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('~assets/fonts/Montserrat-Regular.woff') format('woff'),
+      url('~assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'MontserratL';
+   font-weight: 300;
+   src: local('Montserrat-Light'),
+      url('~assets/fonts/Montserrat-Light.woff2') format('woff2'),
+      url('~assets/fonts/Montserrat-Light.woff') format('woff'),
+      url('~assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'MontserratT';
+   font-weight: 100;
+   src: local('Montserrat-Thin'),
+      url('~assets/fonts/Montserrat-Thin.woff2') format('woff2'),
+      url('~assets/fonts/Montserrat-Thin.woff') format('woff'),
+      url('~assets/fonts/Montserrat-Thin.ttf') format('truetype');
+}

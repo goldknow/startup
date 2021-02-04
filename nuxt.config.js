@@ -49,7 +49,11 @@ export default {
 	/**
 	 * 글로벌 CSS & SCSS 로드
 	 */
-	css: [],
+	css: [
+		'@/assets/css/font.css',
+		'@/assets/css/reset.css',
+		'@/assets/css/common.css'
+	],
 
 	/**
 	 * 글로벌 플로그인 로드
@@ -82,7 +86,7 @@ export default {
 	 * 뷰티파이 플러그인 정의
 	 */
 	vuetify: {
-		customVariables: ['~/assets/variables.scss'],
+		customVariables: ['~/assets/scss/variables.scss'],
 		theme: {
 			dark: false,
 			themes: {

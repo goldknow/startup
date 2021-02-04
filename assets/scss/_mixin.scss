@@ -1,0 +1,181 @@
+// color
+$mainColor: #e16004;
+$darkGreyColor: #666;
+$lightGreyColor: #999;
+
+// clearfix
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+// box center
+@mixin boxCenter($x, $y, $z) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    z-index: $z;
+
+    @if $x==50% and $y==50% {
+        transform: translate(-50%, -50%);
+    }
+
+    @else if $x==50% {
+        transform: translateX(-50%);
+    }
+
+    @else if $y==50% {
+        transform: translateY(-50%);
+    }
+}
+
+// font Weight
+@mixin fontWeight($w) {
+    font-weight: $w;
+
+    @if $w==bold {
+        font-weight: 700;
+    }
+
+    @else if $w==regular {
+        font-weight: 400;
+    }
+
+    @else if $w==light {
+        font-weight: 300;
+    }
+
+    @else if $w==thin {
+        font-weight: 100;
+    }
+}
+
+// a block
+@mixin aBlock($block) {
+    display: $block;
+    width: 100%;
+    height: 100%;
+}
+
+// transition
+@mixin transition($s) {
+    transition: all $s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+// flex 
+@mixin flex($x, $y) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
+
+// inlineFlex 
+@mixin inlineFlex($x, $y) {
+    display: inline-flex;
+    justify-content: $x;
+    align-items: $y;
+}
+
+// 이미지 백그라운드
+@mixin bgImg($p, $s) {
+    background-position: $p;
+    background-size: $s;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+}
+
+// border-radius
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+}
+
+// ----------------------------
+//   @ 미디어쿼리 mixin   
+//   @ PC first
+//   @ min-width : 1280px
+//   @ max-width : 1920px
+// ----------------------------
+
+// Breakpoints
+$breakpoint-desktop-h: 850px; //높이
+$breakpoint-desktop: 1280px;
+$breakpoint-desktop-m: 1440px;
+$breakpoint-desktop-ms: 1600px;
+$breakpoint-desktop-m2: 1760px;
+$breakpoint-desktop-l: 1920px;
+
+
+//1281~
+@mixin desktop {
+    @media all and (min-width: #{$breakpoint-desktop }) {
+        @content;
+    }
+}
+
+//1440~
+@mixin desktop-m {
+    @media all and (min-width: #{$breakpoint-desktop-m }) {
+        @content;
+    }
+}
+
+//1600~
+@mixin desktop-ms {
+    @media all and (min-width: #{$breakpoint-desktop-ms }) {
+        @content;
+    }
+}
+
+//1760~
+@mixin desktop-m2 {
+    @media all and (min-width: #{$breakpoint-desktop-m2 }) {
+        @content;
+    }
+}
+
+//1920~
+@mixin desktop-l {
+    @media all and (min-width: #{$breakpoint-desktop-l}) {
+        @content;
+    }
+}
+
+// ----------------------------
+//   @ 미디어쿼리 mixin   
+//   @ MOBILE first
+// ----------------------------
+
+// ~1281
+@mixin m-desktop {
+    @media all and (max-width: #{$breakpoint-desktop }) {
+        @content;
+    }
+}
+
+// ~1600
+@mixin m-desktop-ms {
+    @media all and (max-width: #{$breakpoint-desktop-ms }) {
+        @content;
+    }
+}
+
+// ----------------------------
+//   @ 미디어쿼리 mixin   
+//   @ HEIGHT point
+// ----------------------------
+
+//~850(높이/기준점:헤더)
+@mixin desktop-h {
+    @media all and (max-height: #{$breakpoint-desktop-h }) {
+        @content;
+    }
+}
