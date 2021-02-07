@@ -1,10 +1,11 @@
 <template>
 	<!-- 루트 엘리먼트 -->
 	<div>
-		<ul class="tab">
-			<li class="on">1</li>
-			<li>2</li>
+		<ul class="tabs">
+			<li class="on"></li>
+			<li></li>
 		</ul>
+		<div class="tab"></div>
 	</div>
 </template>
 
@@ -15,30 +16,42 @@
 	@Component
 	export default class Tab extends Vue {
 
+
 	}
 
 </script>
 
 <style scope lang="scss">
-	.tab {
+	.tabs {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 1024px;
 		height: 60px;
-		background: 0 0 / contain;
+		margin: auto;
 		position: relative;
+		cursor: pointer;
 
 		li {
 			width: 50%;
 			height: 100%;
-			border: 1px solid;
+			background: 0 0 no-repeat;
+			background-image: url(~assets/imgs/tab.png);
 
-			&:nth-child(1).on {
-				background-image: url(~assets/imgs/tab1.png);
+			&:nth-child(1) {
+				background-position: 0 0;
+
+				&.on {
+					background-position: 0 -60px;
+				}
 			}
-			&:nth-child(2).on {
-				background-image: url(~assets/imgs/tab2.png);
+
+			&:nth-child(2) {
+				background-position: 0 -120px;
+				
+				&.on {
+					background-position: 0 -180px;
+				}
 			}
 		}
 	}

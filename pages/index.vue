@@ -12,7 +12,7 @@
 		<ar-section backgroundImg="/img/2.png">
 			<ar-button>아뉘버튼</ar-button>
 		</ar-section> -->
-
+		<tab></tab>		
 		<evt-section>
 			이벤트1
 			<default-button>버튼이라네</default-button>			
