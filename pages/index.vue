@@ -1,11 +1,14 @@
 <template>
 	<!-- 루트 엘리먼트 -->
 	<div>
-		<tab></tab>
+		<tab>
+			<send-button></send-button>
+		</tab>
 		<!-- <evt-section backgroundImg="/_nuxt/assets/imgs/evt1.jpg"></evt-section>
 		<evt-section backgroundImg="/_nuxt/assets/imgs/evt1_bot.jpg">
 			<send-button></send-button>
 		</evt-section> -->
+
 	</div>
 </template>
 

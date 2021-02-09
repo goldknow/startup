@@ -20,12 +20,15 @@
 			</v-tabs>
 
 			<v-tabs-items v-model="tab">
-				<v-tab-item v-for="item in items" :key="item.tab" transition="false">
-					<img :src="item.content" alt="">
-					<slot />
+				<v-tab-item>
+					<event-1-content></event-1-content>
+				</v-tab-item>
+				<v-tab-item>
+					<event-2-content></event-2-content>
 				</v-tab-item>
 			</v-tabs-items>
-		</v-card>
+		</v-card> 
+
 	</div>
 
 </template>
@@ -35,37 +38,46 @@
 	import Vue from 'vue';
 	import Component from 'vue-class-component';
 
-	@Component({
-		data() {
-			return {
-				tab: null,
-				items: [{
-						tab: '1',
-						content: '/_nuxt/assets/imgs/evt2.png'
-					},
-					{
-						tab: '2',
-						content: '/_nuxt/assets/imgs/evt2.png'
-					}
-				],
-			}
-		},
-	})
-
+	@Component
 	export default class Tab extends Vue {
 
+		tab: any = 1;
+
+		items: any[] = [
+			{
+				tab: 1,
+				active: false
+			},
+			{
+				tab: 2,
+				active: false
+			}
+		]
+
+		/*items: any[] = [
+			{
+				tab: 1,
+				content: require('@/assets/imgs/evt1.jpg')
+
+			},
+			{
+				tab: 2,
+				content: require('@/assets/imgs/evt2.jpg')
+
+			}
+		]*/
 	}
 
 </script>
 
-<style scope lang="scss" scoped>
+<style scope lang="scss">
 	#event-wrap {
 		width: 1024px;
 		margin: 0 auto;
 	}
 
 	.v-tabs-bar {
-		height: 100% !important;
+		height: 100%;
 	}
 
 	.tabs {
