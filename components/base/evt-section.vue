@@ -1,21 +1,20 @@
 <template>
 	<section>
-		<img src="~/assets/imgs/evt1.jpg" alt="">
+		<img :src="backgroundImg">
 		<slot />
 	</section>
 </template>
 
-
-<script>
-	import Vue from 'vue';
-	import Component from 'vue-class-component';
+<script lang="ts">
+import Vue from 'vue';
+import {Prop} from 'vue-property-decorator'
+import Component from 'vue-class-component';
 
 	@Component
 	export default class evtSection extends Vue {
-
+		@Prop() backgroundImg?: string;
 
 	}
-
 </script>
 
 <style lang="scss" scoped>
@@ -23,5 +22,6 @@
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
+		position: relative;
 	}
 </style>

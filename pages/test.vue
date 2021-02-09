@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import TabItem from './TabItem.vue'
+import TabItem from './Tabitem.vue'
 export default {
   components: { TabItem },
   data() {

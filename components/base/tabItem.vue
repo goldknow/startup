@@ -6,8 +6,12 @@
 
 <script>
 import Vue from 'vue';
+import Component from 'vue-class-component';
 
-export default class TabItem extends Vue {
+	@Component({
+		
+	})
+	export default class tabitem extends Vue {
 
-}
+	}
 </script>

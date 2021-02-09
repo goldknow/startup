@@ -22,5 +22,6 @@ import Component from 'vue-class-component';
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
+		position: relative;
 	}
 </style>
