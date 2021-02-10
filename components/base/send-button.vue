@@ -1,5 +1,5 @@
 <template>
-	<button></button>
+	<button><slot /></button>
 </template>
 
 <script>
@@ -14,7 +14,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	button {
 		max-width: 360px;
 		width: 100%;

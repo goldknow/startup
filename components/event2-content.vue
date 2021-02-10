@@ -1,6 +1,7 @@
 <template>
 	<div>
-		안녕
+		<img src="~assets/imgs/evt2.jpg" alt="">
+
 	</div>
 </template>
 
@@ -8,10 +9,8 @@
 	import Vue from 'vue';
 	import Component from 'vue-class-component';
 
-	@Component({
-
-	})
-	export default class event1Content extends Vue {
+	@Component
+	export default class event2Content extends Vue {
 
 	}
 

@@ -1,15 +1,3 @@
-<!--
-<template>
-	<div>
-		<ul class="tabs">
-			<li class="on"></li>
-			<li></li>
-		</ul>
-		<div class="tab"></div>
-	</div>
-</template>
--->
-
 <template>
 	<div id="event-wrap">
 		<v-card>
@@ -20,10 +8,10 @@
 			</v-tabs>
 
 			<v-tabs-items v-model="tab">
-				<v-tab-item>
+				<v-tab-item transition="false">
 					<event-1-content></event-1-content>
 				</v-tab-item>
-				<v-tab-item>
+				<v-tab-item transition="false">
 					<event-2-content></event-2-content>
 				</v-tab-item>
 			</v-tabs-items>
@@ -41,15 +29,15 @@
 	@Component
 	export default class Tab extends Vue {
 
-		tab: any = 1;
+		tab: any = 0;
 
 		items: any[] = [
 			{
-				tab: 1,
+				tab: '',
 				active: false
 			},
 			{
-				tab: 2,
+				tab: '',
 				active: false
 			}
 		]

@@ -1,12 +1,21 @@
 <template>
 	<!-- 루트 엘리먼트 -->
 	<div>
-		<tab></tab>
-		
+		<send-button></send-button>
+		<hr>
+		<default-input
+			placeholder="이름"
+			width = "500px"
+		></default-input>
+		<hr>
+		<default-button
+			btnType = "btn-type1"
+			width = "200px"
+		>버튼</default-button>
 	</div>
 </template>
 
-<script>
+<script lang="ts">
 	import Vue from 'vue';
 	import Component from 'vue-class-component';
 
@@ -21,10 +30,6 @@
 </script>
 
 <style lang="scss" scoped>
-	button {
-		position: absolute !important;
-		bottom: 40px;
-		left: 330px;
-	}
+	hr {margin: 20px 0;}
 
 </style>
