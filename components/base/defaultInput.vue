@@ -17,7 +17,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class defaultInput extends Vue {
+	export default class DefaultInput extends Vue {
 
 	@Prop ({default: 'text'}) type?:    string
 	@Prop ({default: ''}) name?:    	string

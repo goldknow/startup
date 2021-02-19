@@ -11,7 +11,7 @@ import {Prop} from 'vue-property-decorator'
 import Component from 'vue-class-component';
 
 	@Component
-	export default class evtSection extends Vue {
+	export default class EvtSection extends Vue {
 		@Prop() backgroundImg?: string;
 
 	}

@@ -7,7 +7,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class sendButton extends Vue {
+	export default class SendButton extends Vue {
 
 
 	}

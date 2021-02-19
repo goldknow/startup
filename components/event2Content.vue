@@ -10,7 +10,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class event2Content extends Vue {
+	export default class Event2Content extends Vue {
 
 	}
 

@@ -12,7 +12,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class defaultButton extends Vue {
+	export default class DefaultButton extends Vue {
 
 		@Prop({default: '250px'}) 	width?: string
 		@Prop({default: 'button-type'}) 	btnType?: string

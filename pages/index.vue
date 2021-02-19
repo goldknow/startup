@@ -1,7 +1,7 @@
 <template>
 	<!-- 루트 엘리먼트 -->
 	<div>
-		<tab></tab>
+		<evt-wrap></evt-wrap>
 		
 	</div>
 </template>
@@ -11,10 +11,10 @@
 	import Component from 'vue-class-component';
 
 	@Component({
-
+		layout:'evtMain'
 	})
 
-	export default class index extends Vue {
+	export default class Index extends Vue {
 
 	}
 

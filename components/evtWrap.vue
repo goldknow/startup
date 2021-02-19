@@ -1,5 +1,5 @@
 <template>
-	<div id="event-wrap">
+	<!-- <div id="event-wrap">
 		<v-card>
 			<v-tabs v-model="tab" class="tabs">
 				<v-tab v-for="item in items" :key="item.tab" active-class="on" class="tab">
@@ -16,9 +16,10 @@
 				</v-tab-item>
 			</v-tabs-items>
 		</v-card> 
-
+	</div> -->
+	<div id="event-wrap">
+		<key-visual bgColor="type1">한우 먹고! 한우 인증 GO~</key-visual>
 	</div>
-
 </template>
 
 
@@ -27,7 +28,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class Tab extends Vue {
+	export default class EvtWrap extends Vue {
 
 		tab: any = 0;
 

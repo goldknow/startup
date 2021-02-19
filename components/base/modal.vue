@@ -31,7 +31,7 @@
 	import Component from 'vue-class-component';
 
 	@Component
-	export default class modal extends Vue {
+	export default class Modal extends Vue {
 		
 		
 	

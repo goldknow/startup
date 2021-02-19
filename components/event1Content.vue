@@ -13,7 +13,7 @@
 	@Component({
 
 	})
-	export default class event1Content extends Vue {
+	export default class Event1Content extends Vue {
 
 	}
 
