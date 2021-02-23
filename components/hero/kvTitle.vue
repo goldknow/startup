@@ -1,12 +1,12 @@
 <template>
-<article>
-   <h1>
-      <slot name="ttl" />
-   </h1>
-   <div>
-      <slot name="txt" />
-   </div>
-</article>
+   <article>
+      <h1>
+         <slot name="ttl" />
+      </h1>
+      <div>
+         <slot name="txt" />
+      </div>
+   </article>
 </template>
 
 <script lang="ts">
@@ -26,10 +26,16 @@ export default class KvTitle extends Vue {
 
 <style lang="scss" scoped>
 article {
+   padding-top: 50px;
    text-align: center;
 
-   h1 {}
+   h1 {
+      font-size: 40px;
+   }
 
-   div {}
+   div {
+      padding-top: 30px;
+      font-size: 18px;
+   }
 }
 </style>
